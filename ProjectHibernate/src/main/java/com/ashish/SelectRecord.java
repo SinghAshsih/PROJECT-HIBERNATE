@@ -6,12 +6,13 @@ import org.hibernate.cfg.Configuration;
 
 public class SelectRecord {
 	public static void main(String[] args) {
+		// Creating configuration object
 		Configuration cfg = new Configuration();
 		cfg.configure("com/ashish/hibernate.cfg.xml");
-
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
-		Object o = session.load(Student.class, new Integer(104));
+		System.out.println(session);
+		Object o = session.load(Student.class, new Integer(102));
 		Student s = (Student) o;
 		// For loading Transaction scope is not necessary...
 		System.out.println("Loaded object student name is___" + s.getName());
