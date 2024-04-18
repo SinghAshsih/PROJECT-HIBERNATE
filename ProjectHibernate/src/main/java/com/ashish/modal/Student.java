@@ -1,4 +1,4 @@
-package com.ashish;
+package com.ashish.modal;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;

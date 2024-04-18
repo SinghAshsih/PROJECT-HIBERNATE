@@ -4,6 +4,8 @@ import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.cfg.Configuration;
 
+import com.ashish.modal.Student;
+
 public class SelectRecord {
 	public static void main(String[] args) {
 		// Creating configuration object

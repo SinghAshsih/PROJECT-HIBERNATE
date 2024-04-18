@@ -5,6 +5,8 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import com.ashish.modal.Student;
+
 public class DeleteRecord {
 	public static void main(String[] args) {
 
@@ -16,7 +18,7 @@ public class DeleteRecord {
 		SessionFactory factory = cfg.buildSessionFactory();
 		Session session = factory.openSession();
 
-		Object object = session.load(Student.class, new Integer(104));
+		Object object = session.load(Student.class, new Integer(101));
 		Student student = (Student) object;
 		Transaction txt = session.beginTransaction();
 
