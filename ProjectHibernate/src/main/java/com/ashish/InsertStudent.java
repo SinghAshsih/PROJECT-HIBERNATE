@@ -6,7 +6,9 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
-public class App {
+import com.ashish.modal.Student;
+
+public class InsertStudent {
 	public static void main(String[] args) {
 		System.out.println("Project is started");
 
@@ -17,7 +19,7 @@ public class App {
 		System.out.println(factory.isClosed());
 
 		Student st = new Student();
-		st.setId(104);
+		st.setId(101);
 		st.setName("Ajay Singh");
 		st.setCity("Gwalior");
 		System.out.println(st);
